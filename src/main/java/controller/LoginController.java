@@ -38,19 +38,17 @@ public class LoginController extends HttpServlet {
         }
         User user = userService.findByEmail(email);
         HttpSession session = request.getSession(true);
+
         boolean isPasswordValid = (user != null && user.getPassword() != null) ? user.getPassword().equals(password)  : false;
-        System.out.print(isPasswordValid);
-        System.out.print(password);
-        System.out.print(user.getPassword());
 
         if ((user != null) && isPasswordValid) {
             session.setAttribute("authorization", user);
-            request.setAttribute("successLogin", "Bạn đã đăng nhập thành công!");
+//            request.setAttribute("successLogin", "Bạn đã đăng nhập thành công!");
             response.sendRedirect("/homepage");
 //            request.getRequestDispatcher(request.getContextPath() + "/homepage").forward(request, response);
         } else {
-            request.setAttribute("errorLogin", "Email hoặc Mật khẩu của bạn bị sai");
-            request.setAttribute("emailLogin", email);
+            request.setAttribute("error", "Email hoặc Mật khẩu của bạn bị sai");
+//            request.setAttribute("emailLogin", email);
             request.getRequestDispatcher( "login.jsp").forward(request, response);
         }
 

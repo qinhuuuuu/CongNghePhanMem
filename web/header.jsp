@@ -35,10 +35,13 @@
         </div>
 
 
-        <% User user = UserService.getInstance().getUserById(1);
-        request.getSession().setAttribute("user", user);
-            List<Detail> cart = CartService.getInstance().getCartOfUser(user.getId());
-//            if (user != null) {
+        <%
+//            User user = UserService.getInstance().getUserById(1);
+            User user = session.getAttribute("authorization") !=null ?(User)session.getAttribute("authorization") : null;
+//            request.getSession().setAttribute("user", user);
+
+            if (user != null) {
+                List<Detail> cart = CartService.getInstance().getCartOfUser(user.getId());
 
         %>
         <a href="/cart" class="item-right"><i
@@ -47,21 +50,21 @@
         </a>
         <a href="/userProfile" class="item-right">
             <img src="images/userNull.png" alt="">
-            <a href="http://localhost:8080/homepage" class="item-right">
+            <a href="http://localhost:8080/userProfile" class="item-right">
                 <p><%=user.getName()%>
                 </p>
             </a>
         </a>
-        <%--        <%} else {%>--%>
-        <%--        <a href="/http://localhost:8080/doLogin" class="item-right"><i--%>
-        <%--                class="fa-solid fa-cart-shopping"></i>--%>
-        <%--            <p>Giỏ hàng</p>--%>
-        <%--        </a>--%>
-        <%--        <a href="http://localhost:8080/doLogin" class="item-right">--%>
-        <%--            <i class="fa-solid fa-user"></i>--%>
-        <%--            <p>Đăng nhập</p>--%>
-        <%--        </a>--%>
-        <%--        <%}%>--%>
+        <%} else {%>
+        <a href="/http://localhost:8080/cart" class="item-right"><i
+                class="fa-solid fa-cart-shopping"></i>
+            <p>Giỏ hàng</p>
+        </a>
+        <a href="http://localhost:8080/login" class="item-right">
+            <i class="fa-solid fa-user"></i>
+            <p>Đăng nhập</p>
+        </a>
+        <%}%>
 
 
     </li>
