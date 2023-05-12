@@ -9,18 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="517e0c6c-3cbe-41ab-bad0-f31a726a9064" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/DetailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/FinishBuy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/FinishBuy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/AddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/AddressService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/CartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/TransportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/TransportService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/finish-buy.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/finish-buy.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/list-product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/list-product.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/order-infor.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/order-infor.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="517e0c6c-3cbe-41ab-bad0-f31a726a9064" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
