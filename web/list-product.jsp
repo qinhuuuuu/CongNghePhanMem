@@ -67,7 +67,7 @@
                 <div class="col-4">
                     <div class="thumbnail">
                         <div class="cont-item ">
-                            <a href="http://localhost:8080/detail-product?id=<%=product.getId()%>"><img
+                            <a href="http://localhost:8080/product?id=<%=product.getId()%>"><img
                                     src="<%=product.getImageSrc()%>" alt="">
                             </a>
                         </div>
@@ -77,7 +77,7 @@
                         </div>
                         <div class="caption">
                             <h3>
-                                <a href="http://localhost:8080/detail-product?id=<%= product.getId()%>"><%= product.getName()%>
+                                <a href="http://localhost:8080/product?id=<%= product.getId()%>"><%= product.getName()%>
                                 </a></h3>
                             <h3 class="price"><%= Format.format(product.getPrice())%> VND</h3>
                         </div>
