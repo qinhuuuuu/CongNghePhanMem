@@ -22,12 +22,19 @@ public class CartService {
 
     public List<Detail> getCartOfUser(int userId) {
         return JDBIConnector.get().withHandle(handle -> {
-            List<Detail> result = handle.createQuery("select d.id, d.quantity from detail d join cart c on d.id = c.cart_detail_id where c.user_id = ?")
+            List<Detail> result = handle.createQuery("select d.id, d.quantity from detail d join cart c on d.id = c.cart_detail_id where c.user_id = ? and status = 0")
                     .bind(0, userId).mapToBean(Detail.class).stream().collect(Collectors.toList());
             for (Detail d : result) {
                 d.setProduct(ProductService.getInstance().getProductByDetailId(d.getId()));
             }
             return result;
+        });
+    }
+
+    public void resetCartOfUser(int userId) {
+        JDBIConnector.get().withHandle(handle -> {
+            return handle.createUpdate("update cart set status = 1 where user_id = ? ")
+                    .bind(0, userId).execute();
         });
     }
 

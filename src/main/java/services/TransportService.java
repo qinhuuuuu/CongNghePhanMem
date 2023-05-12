@@ -28,8 +28,15 @@ public class TransportService {
 
     public Transport getTransportById(int id) {
         return JDBIConnector.get().withHandle(handle -> {
-            return handle.createQuery("select id, name, fee from transport where id = ?").bind(0, id).mapToBean(Transport.class).one();
+            List<Transport> t = handle.createQuery("select id, name, fee from transport where id = ?").bind(0, id).mapToBean(Transport.class).stream().collect(Collectors.toList());
+            if (t.size() != 0) {
+                return t.get(0);
+            }
+            return null;
         });
     }
 
+    public static void main(String[] args) {
+        System.out.println(Integer.parseInt("15"));
+    }
 }
