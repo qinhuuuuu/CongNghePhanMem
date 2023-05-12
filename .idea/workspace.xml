@@ -10,48 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="517e0c6c-3cbe-41ab-bad0-f31a726a9064" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CongNghePhanMem_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CongNghePhanMem_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/Detail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/Format.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/Transport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/FinishBuy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Homepage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ListProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/OrderInfor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Shipping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/db/DBConnect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/db/DBProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/db/JDBIConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/filter/UTF8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/AddressService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/CartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/TransportService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/cart.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/d.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/finish-buy.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/home-page.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/list-product.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/order-infor.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/DBConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,19 +34,12 @@
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="ProjectId" id="2PbnjMoFbEMaeFrqupU8Ij5lRQw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -91,25 +47,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/now/CongNghePhanMem/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/cnpm/test/CongNghePhanMem&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\cnpm\test\CongNghePhanMem\web\css" />
       <recent name="E:\now\CongNghePhanMem\src\main\resources" />
       <recent name="E:\now\CongNghePhanMem\src\main\java" />
     </key>
@@ -117,8 +75,21 @@
       <recent name="E:\now\CongNghePhanMem\web" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="TOMCAT" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="TOMCAT" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="17" nameIsGenerated="true">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.67">
+    <configuration name="DBConnect" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="db.DBConnect" />
+      <module name="CongNghePhanMem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.67" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.67" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="CongNghePhanMem:war">
@@ -128,7 +99,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="480820d7-e1e2-483f-b8e2-439e07ff918c" />
+        <option name="BASE_DIRECTORY_NAME" value="d39cca5c-8401-4a0b-a0b5-26db5411861b" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -136,7 +107,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="53244" />
+        <option name="DEBUG_PORT" value="52583" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -205,6 +176,15 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.DBConnect" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.67" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DBConnect" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -215,10 +195,25 @@
       <option name="presentableId" value="Default" />
       <updated>1683734784102</updated>
       <workItem from="1683734785525" duration="610000" />
+      <workItem from="1683824001447" duration="1543000" />
+      <workItem from="1683825573772" duration="1059000" />
+      <workItem from="1683826811916" duration="339000" />
+      <workItem from="1683827164031" duration="815000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
