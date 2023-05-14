@@ -32,7 +32,7 @@ public class LoginController extends HttpServlet {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
         if (email.isEmpty() || password.isEmpty()) {
-            request.setAttribute("errorLogin", "Email và mật khẩu không được bỏ trống");
+            request.setAttribute("error", "Email và mật khẩu không được bỏ trống");
             request.getRequestDispatcher( "login.jsp").forward(request, response);
             return;
         }

@@ -55,11 +55,15 @@
                 </p>
             </a>
         </a>
-        <%} else {%>
-        <a href="/http://localhost:8080/cart" class="item-right"><i
+        <a href="/logout" class="item-right"><i
                 class="fa-solid fa-cart-shopping"></i>
-            <p>Giỏ hàng</p>
+            <p>Đăng xuất </p>
         </a>
+        <%} else {%>
+<%--        <a href="/http://localhost:8080/cart" class="item-right"><i--%>
+<%--                class="fa-solid fa-cart-shopping"></i>--%>
+<%--            <p>Giỏ hàng</p>--%>
+<%--        </a>--%>
         <a href="http://localhost:8080/login" class="item-right">
             <i class="fa-solid fa-user"></i>
             <p>Đăng nhập</p>

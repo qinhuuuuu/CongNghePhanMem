@@ -25,7 +25,9 @@
         <h2> Đăng nhập</h2>
         <div class="user">
             <p class="error">
-                <%=request.getAttribute("error")%>
+                <%=request.getAttribute("error") != null ? request.getAttribute(
+                        "error"
+                ) : ""%>
             </p>
             <input type="email" name="email" class="name input" placeholder="Email hoặc số điện thoại">
             <input type="password" name="password" class="pass input" placeholder="Mật khẩu">
