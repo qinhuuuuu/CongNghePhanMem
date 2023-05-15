@@ -31,6 +31,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -40,19 +41,12 @@
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="ProjectId" id="2PbnjMoFbEMaeFrqupU8Ij5lRQw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -66,11 +60,12 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/LTWeb/final_project/CongNghePhanMem/src/main/java/controller&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/cnpm/test/CongNghePhanMem&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -79,6 +74,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\cnpm\test\CongNghePhanMem\web\css" />
       <recent name="D:\LTWeb\final_project\CongNghePhanMem\src\main\java\controller" />
       <recent name="D:\LTWeb\final_project\CongNghePhanMem\web\css" />
       <recent name="D:\LTWeb\final_project\CongNghePhanMem\web\js" />
@@ -101,7 +97,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="480820d7-e1e2-483f-b8e2-439e07ff918c" />
+        <option name="BASE_DIRECTORY_NAME" value="d39cca5c-8401-4a0b-a0b5-26db5411861b" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -109,7 +105,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="53244" />
+        <option name="DEBUG_PORT" value="52583" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -188,6 +184,12 @@
       <option name="presentableId" value="Default" />
       <updated>1683734784102</updated>
       <workItem from="1683734785525" duration="610000" />
+      <workItem from="1683824001447" duration="1543000" />
+      <workItem from="1683825573772" duration="1059000" />
+      <workItem from="1683826811916" duration="339000" />
+      <workItem from="1683827164031" duration="4217000" />
+      <workItem from="1684045857564" duration="859000" />
+      <workItem from="1684145339937" duration="828000" />
       <workItem from="1683885279732" duration="1571000" />
       <workItem from="1683964192189" duration="3709000" />
       <workItem from="1684085803519" duration="1360000" />
@@ -197,5 +199,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
