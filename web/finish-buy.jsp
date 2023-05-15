@@ -27,12 +27,12 @@
     <div class="list-product" style="justify-content: center">
         <ul class="container-list-product">
             <li class="notification bd-bottom pb-4 pt-4 uppercase">
-                Cảm ơn bạn đã mua hàng, Cafts đã nhận được đơn hàng của bạn.
+                Cảm ơn bạn đã mua hàng, Crafts đã nhận được đơn hàng của bạn.
             </li>
         </ul>
         <div class="contain-btn " style="justify-content: center">
             <div class="contain-btn" >
-                <a href="http://localhost:8080/listProduct%>"
+                <a href="http://localhost:8080/listProduct"
                    class="return uppercase submit">quay lại mua hàng</a>
             </div>
         </div>
@@ -53,7 +53,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="js/general.js"></script>
 </body>
 
 </html>
