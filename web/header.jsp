@@ -41,7 +41,7 @@
 //            request.getSession().setAttribute("user", user);
 
             if (user != null) {
-                List<Detail> cart = CartService.getInstance().getCartOfUser(user.getId());
+//                List<Detail> cart = CartService.getInstance().getCartOfUser(user.getId());
 
         %>
         <a href="/cart" class="item-right"><i
