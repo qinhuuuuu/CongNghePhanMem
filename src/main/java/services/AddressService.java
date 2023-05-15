@@ -32,4 +32,8 @@ public class AddressService {
                     .bind(0, id).mapToBean(Address.class).one();
         });
     }
+
+    public static void main(String[] args) {
+        System.out.println(getInstance().getAddressById(3));
+    }
 }

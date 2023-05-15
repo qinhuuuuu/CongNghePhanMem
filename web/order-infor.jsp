@@ -67,7 +67,8 @@
                 <%for (Transport t : transportList) {%>
                 <div class="contain-way-ship">
                     <p class="bd-bottom">
-                        <input type="radio" class="way-class" id="way1<%=t.getId()%>" name="way-ship" value="1" checked>
+                        <input type="radio" class="way-class" id="way1<%=t.getId()%>" name="way-ship"
+                               value="<%=t.getId()%>" checked>
                         <label for="way1<%=t.getId()%>">
                             <span class="text"><%=t.getName()%></span>
                             <span class="text fee"><%=Format.format(t.getFee())%> VND</span>
@@ -138,12 +139,10 @@
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
 
-<script src="js/general.js"></script>
 <script>
 
     $(document).ready(function () {
 
-        var transportFee = 0;
 
         function loadTransportFee() {
             let defaultRadio = document.querySelector('input[name="way-ship"]:checked + label .fee');
@@ -154,14 +153,14 @@
                 radio.addEventListener('change', function () {
                     let fee = document.querySelector('input[name="way-ship"]:checked + label .fee');
                     feeSpan.innerHTML = fee.textContent.toLocaleString('vi-VN');
-                    transportFee = parseInt(fee.textContent);
                 });
             });
         }
 
         function loadTotal() {
-            let cartTotal = document.getElementById('cart-total').textContent;
-            let totalPrice = parseInt(cartTotal) + transportFee;
+            let cartTotal = document.getElementById('cart-total').textContent.replace(/[^0-9]/g, '');
+            let transportFee = document.getElementById('fee').textContent.replace(/[^0-9]/g, '');
+            let totalPrice = parseInt(cartTotal) + parseInt(transportFee);
             let totalPriceElements = document.getElementsByClassName('total-price');
             for (let i = 0; i < totalPriceElements.length; i++) {
                 totalPriceElements[i].textContent = totalPrice.toLocaleString('vi-VN');
@@ -174,23 +173,10 @@
             let addressId = getAddressId();
             let deliveryMethodId = getDeliveryMethodId();
             let note = $('#note').val();
-            let orderData = {
-                addressId: addressId,
-                deliveryMethodId: deliveryMethodId,
-                note: note
-            };
-            $.ajax({
-                url: 'finishBuy',
-                type: 'GET',
-                data: orderData,
-                success: function (response) {
-                    // 8. Hệ thống chuyển User đến trang Thông báo xác nhận đơn hàng
-                    window.location.href = 'http://localhost:8080/finishBuy';
-                },
-                error: function (xhr, status, error) {
-                    console.log('Lỗi khi gửi dữ liệu đơn hàng: ' + error);
-                }
-            });
+            let total = $('.total-price').text().replace(/[^0-9]/g, '');
+            // 8. Hệ thống chuyển User đến trang Thông báo xác nhận đơn hàng
+            window.location.href = 'http://localhost:8080/finishBuy?addressId=' + addressId + '&deliveryMethodId=' + deliveryMethodId + '&note=' + note + '&total=' + total;
+
         });
 
 
