@@ -9,7 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="517e0c6c-3cbe-41ab-bad0-f31a726a9064" name="Changes" comment="" />
+    <list default="true" id="517e0c6c-3cbe-41ab-bad0-f31a726a9064" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/AddProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ProductManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/jquery.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/product-manager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/product-manager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/product-manager.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/ProductService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +31,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
-        <option value="Class" />
       </list>
     </option>
   </component>
@@ -55,7 +66,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/now/CongNghePhanMem/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/LTWeb/final_project/CongNghePhanMem/src/main/java/controller&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -68,67 +79,19 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\LTWeb\final_project\CongNghePhanMem\src\main\java\controller" />
+      <recent name="D:\LTWeb\final_project\CongNghePhanMem\web\css" />
+      <recent name="D:\LTWeb\final_project\CongNghePhanMem\web\js" />
       <recent name="E:\now\CongNghePhanMem\src\main\resources" />
       <recent name="E:\now\CongNghePhanMem\src\main\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\LTWeb\final_project\CongNghePhanMem\web\css" />
       <recent name="E:\now\CongNghePhanMem\web" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.TOMCAT">
-    <configuration name="AddressService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="services.AddressService" />
-      <module name="CongNghePhanMem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CartService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="services.CartService" />
-      <module name="CongNghePhanMem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="services.OrderService" />
-      <module name="CongNghePhanMem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TransportService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="services.TransportService" />
-      <module name="CongNghePhanMem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TOMCAT" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="TOMCAT" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="17" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="TOMCAT" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.68" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="17" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="CongNghePhanMem:war">
@@ -215,14 +178,6 @@
         </option>
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.CartService" />
-        <item itemvalue="Application.OrderService" />
-        <item itemvalue="Application.AddressService" />
-        <item itemvalue="Application.TransportService" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -232,10 +187,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683734784102</updated>
-      <workItem from="1683734785525" duration="1317000" />
-      <workItem from="1683736194970" duration="835000" />
-      <workItem from="1683881020862" duration="4430000" />
-      <workItem from="1683909348651" duration="4626000" />
+      <workItem from="1683734785525" duration="610000" />
+      <workItem from="1683885279732" duration="1571000" />
+      <workItem from="1683964192189" duration="3709000" />
+      <workItem from="1684085803519" duration="1360000" />
+      <workItem from="1684136307754" duration="7000" />
     </task>
     <servers />
   </component>
