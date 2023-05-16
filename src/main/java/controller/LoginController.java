@@ -29,26 +29,34 @@ public class LoginController extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+//        Nhận email và password
         String email = request.getParameter("email");
         String password = request.getParameter("password");
+//        Kiểm tra các field có trống không
         if (email.isEmpty() || password.isEmpty()) {
             request.setAttribute("error", "Email và mật khẩu không được bỏ trống");
             request.getRequestDispatcher( "login.jsp").forward(request, response);
             return;
         }
+//        Tìm user trong database
         User user = userService.findByEmail(email);
         HttpSession session = request.getSession(true);
-
+//      Kiểm tra user lấy từ database và thông tin người dùng nhập vào.
+//        (Không kiểm tra trực tiếp tại database vì làm như vậy sẽ bảo mật thông tin về database hơn)
         boolean isPasswordValid = (user != null && user.getPassword() != null) ? user.getPassword().equals(password)  : false;
-
+//      Khi đúng thông tin sẽ set session và chuyển về homepage
         if ((user != null) && isPasswordValid) {
             session.setAttribute("authorization", user);
+            if(user.getVariety()==1){
+                response.sendRedirect("/ProductManager");
+            }else{
+                response.sendRedirect("/homepage");
+            }
 //            request.setAttribute("successLogin", "Bạn đã đăng nhập thành công!");
-            response.sendRedirect("/homepage");
-//            request.getRequestDispatcher(request.getContextPath() + "/homepage").forward(request, response);
         } else {
+//            Khi sai thì sẽ set error về trang login page cụ thể là login form để hiển thị
             request.setAttribute("error", "Email hoặc Mật khẩu của bạn bị sai");
-//            request.setAttribute("emailLogin", email);
             request.getRequestDispatcher( "login.jsp").forward(request, response);
         }
 
