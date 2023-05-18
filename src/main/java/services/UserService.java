@@ -20,6 +20,7 @@ public class UserService {
         }
         return instance;
     }
+//    Tìm user trong databse bằng emal có thì sẽ trả về objet user không thì sẽ trả về null
     public User findByEmail(String email) {
         try {
             return this.jdbi.withHandle(new HandleCallback<User, Exception>() {
