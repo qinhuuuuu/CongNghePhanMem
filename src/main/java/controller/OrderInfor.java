@@ -18,7 +18,7 @@ import java.util.List;
 public class OrderInfor extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        User user = (User) request.getSession().getAttribute("user");
+        User user = (User) request.getSession().getAttribute("authorization");
 
         List<Address> addressList = AddressService.getInstance().getAddressOfUser(user.getId());
         request.setAttribute("addressList", addressList);

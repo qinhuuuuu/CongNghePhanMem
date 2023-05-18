@@ -93,7 +93,7 @@
                 </div>
 
             </div>
-            <%--            <%if (cart.size() != 0) {%>--%>
+            <%if (cart.size() != 0) {%>
             <div class="col-4 bill p-0">
                 <div class="contain-bill p-4">
                     <h5 class="title-bill uppercase">đơn hàng</h5>
@@ -109,6 +109,7 @@
 
                 </div>
             </div>
+            <%}%>
         </div>
     </div>
     <%@include file="footer.jsp" %>

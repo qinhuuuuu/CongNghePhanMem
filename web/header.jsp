@@ -1,6 +1,7 @@
 <%@ page import="bean.*" %>
 <%@ page import="services.*" %>
 <%@ page import="java.util.List" %>
+<%@ page import="java.util.ArrayList" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <ul class="nav nav-page">
     <li class=" left">
@@ -39,9 +40,9 @@
 //            User user = UserService.getInstance().getUserById(1);
             User user = session.getAttribute("authorization") !=null ?(User)session.getAttribute("authorization") : null;
 //            request.getSession().setAttribute("user", user);
-
+            List<Detail> cart = new ArrayList<>();
             if (user != null) {
-//                List<Detail> cart = CartService.getInstance().getCartOfUser(user.getId());
+                 cart = CartService.getInstance().getCartOfUser(user.getId());
 
         %>
         <a href="/cart" class="item-right"><i
