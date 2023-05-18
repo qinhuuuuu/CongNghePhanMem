@@ -24,6 +24,7 @@ public class UserService {
         try {
             return this.jdbi.withHandle(new HandleCallback<User, Exception>() {
                 public User withHandle(Handle handle) throws Exception {
+                    System.out.println(2);
                     try {
                         return handle.createQuery(
                                         "SELECT * FROM user"  + " WHERE email = ?")
@@ -46,5 +47,9 @@ public class UserService {
                     .bind(0, id)
                     .mapToBean(User.class).one();
         });
+    }
+
+    public static void main(String[] args) {
+        System.out.println(getInstance().getUserById(1));
     }
 }
