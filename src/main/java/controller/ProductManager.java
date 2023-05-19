@@ -1,6 +1,7 @@
 package controller;
 
 import bean.Product;
+import bean.User;
 import services.ProductService;
 
 import javax.servlet.*;
@@ -13,6 +14,12 @@ import java.util.List;
 public class ProductManager extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        HttpSession session = request.getSession(true);
+        User user = (User) session.getAttribute("authorization");
+        if (user == null || user.getVariety() != 1) {
+            response.sendRedirect("/homepage");
+            return;
+        }
         String name = "Quản lý sản phẩm";
         List<Product> list = ProductService.getInstance().getProductList();
         int quantity = list.size();

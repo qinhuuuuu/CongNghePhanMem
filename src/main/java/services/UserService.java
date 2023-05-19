@@ -20,10 +20,12 @@ public class UserService {
         }
         return instance;
     }
+//    Tìm user trong databse bằng emal có thì sẽ trả về objet user không thì sẽ trả về null
     public User findByEmail(String email) {
         try {
             return this.jdbi.withHandle(new HandleCallback<User, Exception>() {
                 public User withHandle(Handle handle) throws Exception {
+                    System.out.println(2);
                     try {
                         return handle.createQuery(
                                         "SELECT * FROM user"  + " WHERE email = ?")
@@ -46,5 +48,9 @@ public class UserService {
                     .bind(0, id)
                     .mapToBean(User.class).one();
         });
+    }
+
+    public static void main(String[] args) {
+        System.out.println(getInstance().getUserById(1));
     }
 }

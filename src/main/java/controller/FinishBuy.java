@@ -25,7 +25,7 @@ public class FinishBuy extends HttpServlet {
         int total = Integer.parseInt(request.getParameter("total"));
 
         Order order = new Order();
-        User user = (User) request.getSession().getAttribute("user");
+        User user = (User) request.getSession().getAttribute("authorization");
         order.setUser(user);
         order.setAddress(AddressService.getInstance().getAddressById(1));
         order.setTransport(TransportService.getInstance().getTransportById(deliveryMethodId));
@@ -35,7 +35,9 @@ public class FinishBuy extends HttpServlet {
         order.setTotal(total);
 //    7.    Hệ thống thực thi câu lệnh lưu đơn hàng vào cơ sở dữ liệu.
         OrderService.getInstance().insertOrder(order);
+//        8.  Hệ thống reset giỏ hàng của user sau khi mua xong
         CartService.getInstance().resetCartOfUser(user.getId());
+//        9. Hệ thống chuyển User đến trang Thông báo xác nhận đơn hàng.
         request.getRequestDispatcher("finish-buy.jsp").forward(request, response);
     }
 

@@ -11,7 +11,7 @@ public class User implements Serializable {
     private String password;
     private List<Detail> cart;
     private int status;
-
+    private int variety;
     public User() {
     }
 
@@ -23,6 +23,14 @@ public class User implements Serializable {
         this.password = password;
         this.cart = cart;
         this.status = status;
+    }
+
+    public int getVariety() {
+        return variety;
+    }
+
+    public void setVariety(int variety) {
+        this.variety = variety;
     }
 
     public int getId() {

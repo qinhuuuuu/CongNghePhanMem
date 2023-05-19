@@ -204,11 +204,11 @@
             return deliveryMethodId;
         }
 
-        <%-- 9. User hủy đặt, chọn nút “Hủy” để tiếp tục mua sắm. Hệ thống đưa người dùng về homepage.--%>
+        <%-- 10. User hủy đặt, chọn nút “Hủy” để tiếp tục mua sắm. Hệ thống đưa người dùng về homepage.--%>
         $('.btn-cancel').click(function () {
             window.location.href = 'http://localhost:8080/homepage';
         })
-        <%-- 10. User muốn thay đổi số lượng sản phẩm, chọn nút “Quay lại” ở trang thông tin đơn hàng để trở về Giỏ hàng.--%>
+        <%-- 11. User muốn thay đổi số lượng sản phẩm, chọn nút “Quay lại” ở trang thông tin đơn hàng để trở về Giỏ hàng.--%>
         $('.btn-back').click(function () {
             window.location.href = 'http://localhost:8080/cart';
         })
