@@ -10,17 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="517e0c6c-3cbe-41ab-bad0-f31a726a9064" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/AddProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ProductManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/jquery.dataTables.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/product-manager.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/jquery.dataTables.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/product-manager.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/product-manager.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,6 +184,7 @@
       <workItem from="1683964192189" duration="3709000" />
       <workItem from="1684085803519" duration="1360000" />
       <workItem from="1684136307754" duration="7000" />
+      <workItem from="1684221027885" duration="115000" />
     </task>
     <servers />
   </component>
