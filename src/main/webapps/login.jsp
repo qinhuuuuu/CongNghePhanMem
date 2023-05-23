@@ -20,7 +20,7 @@
 
 <div class="form-login">
     <div class="background"></div>
-    <form action="http://localhost:8080/login" method="post">
+    <form action="/CongNghePhanMem/login" method="post">
         <img src="images/logo/logo-rmbg1.png" alt="">
         <h2> Đăng nhập</h2>
         <div class="user">
@@ -32,11 +32,11 @@
             </p>
             <input type="email" name="email" class="name input" placeholder="Email hoặc số điện thoại">
             <input type="password" name="password" class="pass input" placeholder="Mật khẩu">
-            <a href="http://localhost:8080/forgotPass" class="forget"> Bạn quên mật khẩu?</a>
+            <a href="/forgotPass" class="forget"> Bạn quên mật khẩu?</a>
             <%--                Khi người dùng ấn vào input submit để truyền thông tin lên --%>
             <input type="submit" name="submit" class="submit" value="Đăng nhập">
             <div id="status"></div>
-            <p class="sign-up">Tạo tài khoản mới miễn phí <a href="http://localhost:8080/login">tại đây</a></p>
+            <p class="sign-up">Tạo tài khoản mới miễn phí <a href="./login">tại đây</a></p>
         </div>
     </form>
 </div>

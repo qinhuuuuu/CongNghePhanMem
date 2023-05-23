@@ -34,25 +34,24 @@ public class ProductService {
         });
     }
 
-    public static void main(String[] args) {
-        System.out.println(getInstance().getProductByDetailId(1));
-    }
 
     public int nextId() {
         return 1 + JDBIConnector.get().withHandle(handle -> {
             return handle.createQuery("SELECT MAX(`id`) as numberProduct FROM `product`").mapTo(Integer.class).one();
         });
     }
-        public void addProduct(Product product) {
-            JDBIConnector.get().withHandle(handle -> {
-                return handle.createUpdate("INSERT INTO product VALUES (:id, :name, :description,  :price, :imageSrc, :status);")
-                        .bind("id", nextId())
-                        .bind("name", product.getName())
-                        .bind("description", product.getDescription())
-                        .bind("price", product.getPrice())
-                        .bind("imageSrc", product.getImageSrc())
-                        .bind("status", product.getStatus())
-                        .execute();
-            });
-        }
+
+    public void addProduct(Product product) {
+        JDBIConnector.get().withHandle(handle -> {
+            return handle.createUpdate("INSERT INTO product VALUES (:id, :name, :description,  :price, :imageSrc, :status);")
+                    .bind("id", nextId())
+                    .bind("name", product.getName())
+                    .bind("description", product.getDescription())
+                    .bind("price", product.getPrice())
+                    .bind("imageSrc", product.getImageSrc())
+                    .bind("status", product.getStatus())
+                    .execute();
+        });
     }
+
+}

@@ -11,6 +11,10 @@ plugins {
     id 'war'
 
 }
+war {
+    from 'src/main/webapps'
+}
+
 
 repositories {
     mavenLocal()
@@ -26,13 +30,13 @@ dependencies {
     api 'org.jdbi:jdbi3-core:3.24.1'
     api 'org.apache.httpcomponents:httpclient:4.5.4'
     testImplementation 'junit:junit:3.8.1'
-    compileOnly 'org.apache.tomcat:tomcat-catalina:9.0.68'
+    compileOnly 'org.apache.tomcat:tomcat-catalina:9.0.75'
 }
 
 group = 'org.example'
 version = '1.0-SNAPSHOT'
 description = 'CongNghePhanMem'
-java.sourceCompatibility = JavaVersion.VERSION_1_8
+java.sourceCompatibility = JavaVersion.VERSION_11
 
 publishing {
     publications {
@@ -44,9 +48,9 @@ publishing {
 apply plugin: 'org.hidetake.ssh'
 remotes {
     host {
-        host = '13.212.208.63' // phần # này sẽ là ip hoặc tên miền của máy chủ
-        user = 'centos' // phần $ này sẽ là username trong máy chủ đó
-        identity = file("C:\\Users\\phuon\\Downloads\\LightsailDefaultKey-ap-southeast-1.pem") // phần & này sẽ là đường dẫn đến file ssh key trong máy của người kết nối.
+        host = '34.124.212.198' // phần # này sẽ là ip hoặc tên miền của máy chủ
+        user = 'root' // phần $ này sẽ là username trong máy chủ đó
+            password = 'Quyynhuu02'
     }
 }
 ssh.settings {
@@ -61,7 +65,7 @@ task docker_upload_file_to_server {
             session(remotes.host) { // tạo 1 session kết nối đến máy chủ đã được định nghĩa remotes ở trên phần ‘cấu hình kết nối’
                 remove '/usr/deploy/CongNghePhanMem.war' // xóa file war đã tồn tại ở máy chủ nếu có, ở đây project cụ thể tên là AnimeWeb
 
-                put from: "${project.projectDir}/build/libs/CongNghePhanMem.war", // upload file từ đường dẫn của file war của máy kết nối
+                put from: "${project.projectDir}/build/libs/CongNghePhanMem-1.0-SNAPSHOT.war", // upload file từ đường dẫn của file war của máy kết nối
                         into: "/usr/deploy/CongNghePhanMem.war" // lưu vào thư mục usr/deploy với tên mới là AnimeWeb.war
             }
         }
@@ -83,6 +87,12 @@ task docker_app_start {
             }
         }
     }
+}
+task docker_deploy{
+    docker_deploy.dependsOn docker_app_start
+    docker_deploy.dependsOn docker_upload_file_to_server
+    docker_deploy.dependsOn build
+    tasks.getByName('docker_app_start').mustRunAfter docker_upload_file_to_server
 }
 
 tasks.withType(JavaCompile) {

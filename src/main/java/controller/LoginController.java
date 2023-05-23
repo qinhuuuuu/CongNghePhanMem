@@ -24,7 +24,7 @@ public class LoginController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher(request.getContextPath() + "/login.jsp").forward(request, response);
+        request.getRequestDispatcher("login.jsp").forward(request, response);
     }
 
     @Override
@@ -49,9 +49,9 @@ public class LoginController extends HttpServlet {
         if ((user != null) && isPasswordValid) {
             session.setAttribute("authorization", user);
             if(user.getVariety()==1){
-                response.sendRedirect("/ProductManager");
+                response.sendRedirect("/CongNghePhanMem/ProductManager");
             }else{
-                response.sendRedirect("/homepage");
+                response.sendRedirect("/CongNghePhanMem/homepage");
             }
 //            request.setAttribute("successLogin", "Bạn đã đăng nhập thành công!");
         } else {

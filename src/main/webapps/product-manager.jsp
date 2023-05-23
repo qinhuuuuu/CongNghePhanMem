@@ -62,8 +62,8 @@
 <div class="header-left">
     <img src="logo-rmbg1.png" alt="">
     <ul>
-        <li><a class="nav-item" href="/ProductManager">Quản lý sản phẩm</a></li>
-        <li><a class="nav-item logout" href="/logout" id="logout">Đăng xuất</a></li>
+        <li><a class="nav-item" href="/CongNghePhanMem/ProductManager">Quản lý sản phẩm</a></li>
+        <li><a class="nav-item logout" href="/CongNghePhanMem/logout" id="logout">Đăng xuất</a></li>
     </ul>
 </div>
 
