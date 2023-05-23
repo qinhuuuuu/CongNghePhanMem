@@ -175,7 +175,7 @@
             let note = $('#note').val();
             let total = $('.total-price').text().replace(/[^0-9]/g, '');
             // 8. Hệ thống chuyển User đến trang Thông báo xác nhận đơn hàng
-            window.location.href = 'http://localhost:8080/finishBuy?addressId=' + addressId + '&deliveryMethodId=' + deliveryMethodId + '&note=' + note + '&total=' + total;
+            window.location.href = '/CongNghePhanMem/finishBuy?addressId=' + addressId + '&deliveryMethodId=' + deliveryMethodId + '&note=' + note + '&total=' + total;
 
         });
 
@@ -206,11 +206,11 @@
 
         <%-- 10. User hủy đặt, chọn nút “Hủy” để tiếp tục mua sắm. Hệ thống đưa người dùng về homepage.--%>
         $('.btn-cancel').click(function () {
-            window.location.href = 'http://localhost:8080/homepage';
+            window.location.href = '/CongNghePhanMem/homepage';
         })
         <%-- 11. User muốn thay đổi số lượng sản phẩm, chọn nút “Quay lại” ở trang thông tin đơn hàng để trở về Giỏ hàng.--%>
         $('.btn-back').click(function () {
-            window.location.href = 'http://localhost:8080/cart';
+            window.location.href = '/CongNghePhanMem/cart';
         })
     })
 </script>

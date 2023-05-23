@@ -32,7 +32,7 @@
         </ul>
         <div class="contain-btn " style="justify-content: center">
             <div class="contain-btn" >
-                <a href="http://localhost:8080/listProduct"
+                <a href="/CongNghePhanMem/listProduct"
                    class="return uppercase submit">quay lại mua hàng</a>
             </div>
         </div>

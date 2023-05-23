@@ -8,7 +8,7 @@
     <title>login</title>
     <link rel="stylesheet" href="css/reset.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesom e/6.2.0/css/all.min.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
           integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -20,7 +20,7 @@
 
 <div class="form-login">
     <div class="background"></div>
-    <form action="http://localhost:8080/login" method="post">
+    <form action="/CongNghePhanMem/login" method="post">
         <img src="images/logo/logo-rmbg1.png" alt="">
         <h2> Đăng nhập</h2>
         <div class="user">
@@ -32,11 +32,11 @@
             </p>
             <input type="email" name="email" class="name input" placeholder="Email hoặc số điện thoại">
             <input type="password" name="password" class="pass input" placeholder="Mật khẩu">
-            <a href="http://localhost:8080/forgotPass" class="forget"> Bạn quên mật khẩu?</a>
+            <a href="/forgotPass" class="forget"> Bạn quên mật khẩu?</a>
             <%--                Khi người dùng ấn vào input submit để truyền thông tin lên --%>
             <input type="submit" name="submit" class="submit" value="Đăng nhập">
             <div id="status"></div>
-            <p class="sign-up">Tạo tài khoản mới miễn phí <a href="http://localhost:8080/login">tại đây</a></p>
+            <p class="sign-up">Tạo tài khoản mới miễn phí <a href="./login">tại đây</a></p>
         </div>
     </form>
 </div>
