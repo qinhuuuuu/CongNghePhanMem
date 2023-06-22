@@ -10,26 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="517e0c6c-3cbe-41ab-bad0-f31a726a9064" name="Changes" comment="">
-
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ProductManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/product-manager.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/product-manager.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/product-manager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/product-manager.jsp" afterDir="false" />
-
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/FinishBuy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/FinishBuy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/OrderInfor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/OrderInfor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Shipping.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/cart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/d.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/order-infor.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/order-infor.jsp" afterDir="false" />
-
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AddProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AddProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/product-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/product-manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/product-manager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/product-manager.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,6 +208,11 @@
       <workItem from="1684136307754" duration="7000" />
       <workItem from="1684176414852" duration="2220000" />
       <workItem from="1684160381351" duration="4160000" />
+      <workItem from="1684522591283" duration="3792000" />
+      <workItem from="1684684764680" duration="174000" />
+      <workItem from="1684855414645" duration="1673000" />
+      <workItem from="1684896208901" duration="1468000" />
+      <workItem from="1685639222111" duration="2000" />
     </task>
     <servers />
   </component>

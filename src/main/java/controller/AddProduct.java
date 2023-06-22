@@ -19,7 +19,7 @@ public class AddProduct extends HttpServlet {
         int inventory = Integer.parseInt(request.getParameter("inventory"));
         String imgSrc = "";
         String decription = request.getParameter("decription");
-//        add Product
+// 6. thêm sản phẩm vào cơ sở dữ liệu
         Product product = new Product(sizeProduct + 1, name, decription, price, imgSrc, 0);
         ProductService.getInstance().addProduct(product);
     }

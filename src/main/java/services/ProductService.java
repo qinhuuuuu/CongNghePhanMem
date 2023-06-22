@@ -43,6 +43,7 @@ public class ProductService {
             return handle.createQuery("SELECT MAX(`id`) as numberProduct FROM `product`").mapTo(Integer.class).one();
         });
     }
+//  7. Lưu sản phẩm vào csdl
         public void addProduct(Product product) {
             JDBIConnector.get().withHandle(handle -> {
                 return handle.createUpdate("INSERT INTO product VALUES (:id, :name, :description,  :price, :imageSrc, :status);")

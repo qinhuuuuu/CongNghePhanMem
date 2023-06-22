@@ -138,6 +138,7 @@
         <div class="table-cart">
             <h2>Danh sách sản phẩm</h2>
             <div class="right">
+<%--                1. nhấn vào button thêm--%>
                 <button type="button" class="btn-add-address button submit add" data-toggle="modal"
                         data-target="#exampleModalCenter">Thêm
                 </button>
@@ -190,6 +191,7 @@
     </div>
 
 </div>
+<%-- 2. Form thêm sản phẩm--%>
 
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
