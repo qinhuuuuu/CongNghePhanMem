@@ -12,16 +12,16 @@
     <li class="nav-item center" id="nav-items">
 
         <a class="nav-link  " id="sanpham"
-           href="http://localhost:8080/listProduct">Sản
+           href="/CongNghePhanMem/listProduct">Sản
             Phẩm</a>
         <a class="nav-link  " id="go"
-           href="http://localhost:8080/listProduct">Gỗ</a>
+           href="/CongNghePhanMem/listProduct">Gỗ</a>
         <a class="nav-link  " id="gom"
-           href="http://localhost:8080/listProduct">Gốm</a>
+           href="/CongNghePhanMem/listProduct">Gốm</a>
         <a class="nav-link "
-           href="http://localhost:8080/listProduct">Tranh</a>
+           href="/CongNghePhanMem/listProduct">Tranh</a>
         <a class="nav-link  "
-           href="http://localhost:8080/listProduct">Giảm
+           href="/CongNghePhanMem/listProduct">Giảm
             giá</a>
 
     </li>
@@ -45,18 +45,18 @@
                  cart = CartService.getInstance().getCartOfUser(user.getId());
 
         %>
-        <a href="/cart" class="item-right"><i
+        <a href="/CongNghePhanMem/cart" class="item-right"><i
                 class="fa-solid fa-cart-shopping"></i>
             <p>Giỏ hàng </p>
         </a>
         <a href="/userProfile" class="item-right">
             <img src="images/userNull.png" alt="">
-            <a href="http://localhost:8080/userProfile" class="item-right">
+            <a href="/userProfile" class="item-right">
                 <p><%=user.getName()%>
                 </p>
             </a>
         </a>
-        <a href="/logout" class="item-right"><i
+        <a href="/CongNghePhanMem/logout" class="item-right"><i
                 class="fa-solid fa-cart-shopping"></i>
             <p>Đăng xuất </p>
         </a>
@@ -65,7 +65,7 @@
 <%--                class="fa-solid fa-cart-shopping"></i>--%>
 <%--            <p>Giỏ hàng</p>--%>
 <%--        </a>--%>
-        <a href="http://localhost:8080/login" class="item-right">
+        <a href="/CongNghePhanMem/login" class="item-right">
             <i class="fa-solid fa-user"></i>
             <p>Đăng nhập</p>
         </a>

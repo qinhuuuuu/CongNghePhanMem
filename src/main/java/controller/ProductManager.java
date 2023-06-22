@@ -17,7 +17,7 @@ public class ProductManager extends HttpServlet {
         HttpSession session = request.getSession(true);
         User user = (User) session.getAttribute("authorization");
         if (user == null || user.getVariety() != 1) {
-            response.sendRedirect("/homepage");
+            response.sendRedirect("/CongNghePhanMem/homepage");
             return;
         }
         String name = "Quản lý sản phẩm";

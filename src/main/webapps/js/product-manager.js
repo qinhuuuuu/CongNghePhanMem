@@ -14,7 +14,7 @@ $(document).ready(function () {
             return;
         }
         $.ajax({
-            url: "/addProduct",
+            url: "/CongNghePhanMem/addProduct",
             type: "get",
             data: {
                 name: name,

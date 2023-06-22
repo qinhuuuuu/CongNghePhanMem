@@ -88,7 +88,7 @@
                 <%} else {%>
                 <div class="contain-btn" style="justify-content: center">
                     <%}%>
-                    <a href="http://localhost:8080/listProduct"
+                    <a href="/listProduct"
                        class="return uppercase submit">quay lại mua hàng</a>
                 </div>
 
@@ -131,7 +131,7 @@
             // 1. User chọn chức năng Đặt hàng ở Giỏ hàng
             $('.btn-total').click(function () {
                 // 2. Hệ thống chuyển User đến trang Thông tin đơn hàng
-                window.location = "http://localhost:8080/orderInfor";
+                window.location = "/CongNghePhanMem/orderInfor";
             })
         })</script>
 </body>
